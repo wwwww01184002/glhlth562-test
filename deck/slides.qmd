@@ -1,0 +1,81 @@
+---
+title: "Global Health Indicator Explorer"
+format:
+  revealjs:
+    theme: simple
+    slide-number: true
+---
+
+## Global Health Indicator Explorer
+
+- Interactive health data explorer
+- Real-time data + AI summary
+
+::: notes
+Today I will present an interactive tool for exploring global health indicators with real-time data and AI-generated summaries.
+:::
+
+---
+
+## Problem
+
+- Health data is hard to interpret
+- Users see numbers, but not insights
+
+::: notes
+Global health data is available, but it is often difficult for users to interpret trends from raw numbers.
+:::
+
+---
+
+## What this product does
+
+- Select country, indicator, year range
+- View trend automatically
+- Generate plain-language summary
+
+::: notes
+Users can interactively explore data and generate a simple explanation of the trend.
+:::
+
+---
+
+## Demo (Live)
+
+- Change country / indicator
+- Adjust year range
+- Click **Generate Summary**
+
+::: notes
+Now I will demonstrate the app. The plot updates automatically, and the summary is generated on demand.
+:::
+
+---
+
+## Design & Trade-offs
+
+- API-based data (dynamic, no local data)
+- LLM summary + rule-based fallback
+- Modular structure (separate R files)
+
+::: notes
+I used API data to keep it dynamic, and combined LLM with a fallback to ensure reliability. The code is modular for maintainability.
+:::
+
+---
+
+## Limitations & Improvements
+
+- Depends on API and internet
+- Limited indicators
+- Future: more data, export, better UI
+
+::: notes
+The app depends on external APIs and has limited coverage. With more time, I would expand features and improve usability.
+:::
+
+---
+
+## Thank you
+
+Questions?
